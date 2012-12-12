@@ -19,7 +19,7 @@ class SimpleHttpd
       var request  = context.Request;
       var response = context.Response;
 
-      Console.WriteLine(request.RawUrl);
+      Console.WriteLine("{0} {1}", DateTime.Now, request.RawUrl);
 
       var path = root + request.RawUrl;
 
